@@ -1,0 +1,7 @@
+# ignore all files generated at runtime
+**/out
+# .idea files to ignore
+**/.idea/
+# ignore all iml files
+*.iml
+.DS_Store

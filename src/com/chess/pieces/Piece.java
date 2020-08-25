@@ -7,12 +7,12 @@ public abstract class Piece {
     // Instance Variables
     private boolean removed;
     // White is true & Black is false
-    private boolean white;
+    private Color color;
 
     // Constructor
-    public Piece(boolean color){
+    public Piece(Color color){
         this.setRemoved(false);
-        this.setWhite(color);
+        this.setColor(color);
     }
 
     // Getters & Setters for removed
@@ -25,11 +25,11 @@ public abstract class Piece {
     }
 
     // Getters & Setters for Color
-    public boolean isWhite() {
-        return white;
+    public Color getColor() {
+        return color;
     }
-    public void setWhite(boolean color) {
-        this.white = color;
+    public void setColor(Color color) {
+        this.color = color;
     }
 
     // Check if move is valid

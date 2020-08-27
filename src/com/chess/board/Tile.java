@@ -1,6 +1,5 @@
 package com.chess.board;
 
-import com.chess.pieces.Color;
 import com.chess.pieces.Piece;
 
 public class Tile {
@@ -28,10 +27,6 @@ public class Tile {
 
     @Override
     public String toString() {
-        if (piece != null) {
-            String color = piece.getColor() == Color.WHITE ? "W" : "B";
-            return color + piece.toString();
-        }
-        return ".";
+        return piece != null ? piece.toString() : ".";
     }
 }

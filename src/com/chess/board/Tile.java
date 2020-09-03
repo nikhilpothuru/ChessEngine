@@ -25,6 +25,10 @@ public class Tile {
         return y;
     }
 
+    public Piece getPiece() {
+        return piece;
+    }
+
     @Override
     public String toString() {
         return piece != null ? piece.toString() : ".";
